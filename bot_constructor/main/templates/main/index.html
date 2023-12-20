@@ -1,0 +1,38 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="{% static 'main/css/main.css' %}">
+</head>
+<body>
+<div class="list">
+    <div class="block">
+        <input type="text" size="30" placeholder="Введите токен">
+        <br><br>
+        <select list>-->
+            <option list>Эхо-бот</option>
+            <option list>Бот 1</option>
+            <option list>Бот 2</option>
+            <option list>Бот 3</option>
+        </select>
+        <br><br>
+        <button onclick='start_bot()' type="button">Запустить</button>
+    </div>
+</div>
+<script>
+    function start_bot(){
+        asyncio.run()
+    }
+
+    document.getElementById('button').onclick = function(){
+    alert("button was clicked");
+}
+</script>
+</body>
+</html>
